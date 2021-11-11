@@ -6,7 +6,9 @@ import { CoursesService } from './courses.service';
 @Controller('courses')
 export class CoursesController {
 
-    constructor(private CS : CoursesService){}
+    constructor(private CS : CoursesService){
+        console.log("course.controller.ts")
+    }
 
     @Post()
     addCourse(@Body() data : CourseDetails){

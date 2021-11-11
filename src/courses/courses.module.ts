@@ -3,7 +3,10 @@ import { CoursesController } from './courses.controller';
 import { CoursesService } from './courses.service';
 
 @Module({
-  controllers: [CoursesController],
-  providers: [CoursesService]
+  controllers: [],
+  providers: []
 })
-export class CoursesModule {}
+export class CoursesModule {
+  constructor(){
+  }
+}
